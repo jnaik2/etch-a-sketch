@@ -12,15 +12,24 @@
     <div id="sketch-container"></div>
     <div class="controls">
       <div class="control-size-container">
-        <div>Grid Size: <span id="slider-display">20x20</span></div>
-        <input
-          id="control-size-slider"
-          type="range"
-          step="1"
-          min="1"
-          max="40"
-          value="20"
-        />
+        <div class="control-display">
+          <span>Grid Size: <span id="slider-display">20 x 20</span></span>
+          <input
+            id="control-size-slider"
+            type="range"
+            step="1"
+            min="1"
+            max="40"
+            value="20"
+          />
+        </div>
+        <button id="clear-button">Clear</button>
+        <button id="eraser-button">Eraser</button>
+        <button id="rainbow-button">Rainbow Mode</button>
+        <div id="control-color">
+          <div>Custom Color</div>
+          <input type="color" id="color-display" />
+        </div>
       </div>
     </div>
   </body>

@@ -2,26 +2,27 @@
 
 html,
 body {
+  color: rgb(221, 106, 106);
   margin: 0;
   height: 100%;
 }
 
 body {
-  padding-top: 15px;
+  padding: 0 0 10px 0;
   background-color: blanchedalmond;
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 #sketch-container {
   border: 25px solid rgb(221, 106, 106);
   border-radius: 15px;
-  margin: auto;
   display: flex;
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
   flex-wrap: wrap;
 }
 
@@ -32,6 +33,71 @@ body {
 h1 {
   font-size: 48px;
   font-family: Roboto;
-  color: rgb(221, 106, 106);
   margin: 0;
+}
+
+.control-display {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 18px;
+  gap: 5px;
+}
+
+.control-size-container {
+  display: flex;
+  background-color: rgb(221, 106, 106);
+  padding: 25px;
+  border-radius: 20px;
+  border: 5px solid black;
+  gap: 10px;
+}
+
+button {
+  align-self: center;
+  color: rgb(221, 106, 106);
+  background-color: white;
+  border: 0;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  width: 150px;
+  height: 40px;
+}
+
+#control-color {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+#control-color div {
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  transition: 0.15s;
+  opacity: 0.85;
+}
+
+button:active {
+  transition: 0.15s;
+  opacity: 0.55;
+}
+
+#color-display {
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  height: 30px;
+  width: 75px;
+  border-radius: 100px;
+  border: none;
+  background-color: transparent;
+}
+
+input::-webkit-color-swatch {
+  border: 1px solid black;
 }
