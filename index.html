@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <h1>Etch-A-Sketch</h1>
+    <div id="sketch-container"></div>
+    <div class="controls">
+      <div class="control-size-container">
+        <div>Grid Size: <span id="slider-display">20x20</span></div>
+        <input
+          id="control-size-slider"
+          type="range"
+          step="1"
+          min="1"
+          max="40"
+          value="20"
+        />
+      </div>
+    </div>
+  </body>
+</html>
